@@ -1,0 +1,140 @@
+/* MENU */
+
+nav{
+    background-color: pink;   /* cor de fundo do menu */
+    padding: 10px 0;   /* espaçamento interno do menu */
+    text-align: center;   /* centraliza o texto */
+    position: fixed;    /* fixa o menu no topo da página */
+    top: 0;
+    width: 100%;   /* largura do menu */
+    z-index: 1000;   /* coloca o menu acima de outros elementos */
+}
+
+nav ul{
+    list-style: none;   /* remove os marcadores da lista*/
+    padding: 0;   /* remove o espaçamento interno da lista */
+    margin: 0;   /* remove a margem da lista */
+    display: flex;   /* exibe os itens da lista em linha */
+    align-items: center;   /* alinha os itens da lista verticalmente */
+    justify-content: space-around;   /* espaçamento entre os itens do menu */
+
+    /* justify-content: center;   /* centraliza os itens da lista */
+}
+
+nav ul li{
+    display: inline;   /* exibe os itens da lista em linha */
+    margin: 0 10px;   /* espaçamento entre os itens do menu */
+    font-size: large;   /* tamanho da fonte */
+    font-weight: bold;    /* negrito */
+    text-decoration: none;   /* remove o sublinhado */
+}
+
+nav ul li a{
+    color: black;   /* cor do texto */
+    text-decoration: none;   /*remove o sublinhado */
+    padding: 5px 10px;   /* espaçamento interno do link */
+    border-radius: 10px;   /* borda arredondada */
+    transition: background-color 0.3s;   /* transisção suave para a cor de fundo */
+    display: inline-block;   /* exibe o link em bloco */
+}
+
+nav ul li a:hover{
+    background-color: aliceblue;   /* cor do fundo do link ao passar o mouse */
+    color: palevioletred;   /* cor do texto ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* sombra do link */
+}
+
+
+
+/* LOGIN */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(135deg, #4a00e0, #8e2de2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: whitesmoke;
+}
+
+/* Container principal */
+.container-login {
+    background-color: pink;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 360px;
+}
+
+.container-login h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: palevioletred;
+}
+
+/* Estilização dos inputs e labels */
+.container-login label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.container-login input[type="text"],
+.container-login input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid palevioletred;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s border-color ease;
+}
+
+.container-login input:focus {
+    border-color: plum;
+    outline: none;
+}
+
+/* Botão de envio */
+.container-login button[type="submit"]{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: white;
+    color: palevioletred;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s background-color ease;
+}
+
+.container-login button:hover {
+    background-color: plum;
+}
+
+/* Link para cadastro */
+.container-login p {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.container-login a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-login a:hover {
+    text-decoration: underline;
+} 

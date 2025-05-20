@@ -1,0 +1,60 @@
+/* MENU */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: pink;   /* cor de fundo do menu */
+    padding: 10px 0;   /* espaçamento interno do menu */
+    text-align: center;   /* centraliza o texto */
+    position: fixed;    /* fixa o menu no topo da página */
+    top: 0;
+    width: 100%;   /* largura do menu */
+    z-index: 1000;   /* coloca o menu acima de outros elementos */
+}
+
+nav ul{
+    list-style: none;   /* remove os marcadores da lista*/
+    padding: 0;   /* remove o espaçamento interno da lista */
+    margin: 0;   /* remove a margem da lista */
+    display: flex;   /* exibe os itens da lista em linha */
+    align-items: center;   /* alinha os itens da lista verticalmente */
+    justify-content: space-around;   /* espaçamento entre os itens do menu */
+
+    /* justify-content: center;   /* centraliza os itens da lista */
+}
+
+nav ul li{
+    display: inline;   /* exibe os itens da lista em linha */
+    margin: 0 10px;   /* espaçamento entre os itens do menu */
+    font-size: large;   /* tamanho da fonte */
+    font-weight: bold;    /* negrito */
+    text-decoration: none;   /* remove o sublinhado */
+}
+
+nav ul li a{
+    color: black;   /* cor do texto */
+    text-decoration: none;   /*remove o sublinhado */
+    padding: 5px 10px;   /* espaçamento interno do link */
+    border-radius: 10px;   /* borda arredondada */
+    transition: background-color 0.3s;   /* transisção suave para a cor de fundo */
+    display: inline-block;   /* exibe o link em bloco */
+}
+
+nav ul li a:hover{
+    background-color: aliceblue;   /* cor do fundo do link ao passar o mouse */
+    color: palevioletred;   /* cor do texto ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* sombra do link */
+}
+
+
+
+
+/*background-color: #000;   /* cor do fundo do link ao passar o mouse */
+
+/*color: #fff;   /* cor do texto ao passar o mouse */
+
+/*display: inline-block;   /*exibe o link em bloco */
+
+/*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* sombra do link */
