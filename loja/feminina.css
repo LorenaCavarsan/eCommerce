@@ -49,49 +49,95 @@ nav ul li a:hover{
 }
 
 
+/* CARDS */
 
-
-/*background-color: #000;   /* cor do fundo do link ao passar o mouse */
-
-/*color: #fff;   /* cor do texto ao passar o mouse */
-
-/*display: inline-block;   /*exibe o link em bloco */
-
-/*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* sombra do link */
-
-
-
-
-/* FOOTER */
-
-footer {
-    background-color: pink;   /* cor de fundo do footer */
-    color: black;   /* cor do texto */
-    text-align: center;   /* centraliza o texto */
-    padding: 20px 0;   /* espaçamento interno do footer */
-    position: fixed;   /* fixa o footer na parte inferior da página */
-    bottom: 0;
-    width: 100%;   /* largura do footer */
+.container {
+    display: flex;   /* Coloca os cards lado a lado */
+    flex-wrap: wrap;   /* Permite quebra de linha se necessário */
 }
 
-.footer-container{
-    display: flex;   /* alinha os itens do footer */
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+.card{
+    background-color: pink;  /*#c6cdff*/
+    border: 1px solid #ffffff;
+    border-radius: 15px; /* Arredonda os cantos dos cards */
     padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1 1 270px; /* Permite que os cards cresçam igualmente */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+    margin-top: 190px;
+    margin-right: 30px;
+    margin-left: 20px;
 }
 
-.footer-section{
-    flex: 1;   /* cada seção ocupa o mesmo espaço */
-    margin: 0 10px;   /* espaçamento entre as seções */
+/* Estilo para o título dos cards */
+.card h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.7em;
+    color: #ffffff;
 }
 
-ul li{
-    list-style: none;   /* remove os marcadores da lista */
-    margin: 5px 0;   /* espaçamento entre os itens da lista */
+/* Estilo para o parágrafo dos cards */
+.card p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
 }
-ul li a{
-    color: black;   /* cor do texto */
-    text-decoration: none;   /* remove o sublinhado */
+
+/* Estilo para o Botão Adicionar dos cards */
+.card button{
+    background-color: white;
+    border-color: white;
+    font-size: 20px;
+    color: palevioletred;
+    cursor: pointer;   /* Muda o cursor para indicar que é clicável */
+}
+
+
+/* CARRINHO DE COMPRAS */
+
+h1{
+    color: palevioletred;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid palevioletred;
+}
+
+th{
+    background-color: pink;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 200px;
+    color: #ffffff;
+}
+
+tr{
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+
+/* estiliza o botão de remover */
+
+button{
+    background-color: palevioletred;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
